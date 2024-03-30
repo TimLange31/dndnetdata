@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34701.34
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DungeonsData", "src\DungeonsData.csproj", "{301E3C41-FA0D-4247-811A-1985232F4159}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{F89F0301-65F9-4D2A-9428-B69987F0ECE1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{784D76F8-EC66-4CB9-A196-17CD9E3A86E0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DungeonData.Tests", "tests\DungeonData.Tests.csproj", "{AE837AD6-22C2-44F7-8B02-949C03811A69}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{301E3C41-FA0D-4247-811A-1985232F4159}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{301E3C41-FA0D-4247-811A-1985232F4159}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{301E3C41-FA0D-4247-811A-1985232F4159}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{301E3C41-FA0D-4247-811A-1985232F4159}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE837AD6-22C2-44F7-8B02-949C03811A69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE837AD6-22C2-44F7-8B02-949C03811A69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE837AD6-22C2-44F7-8B02-949C03811A69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE837AD6-22C2-44F7-8B02-949C03811A69}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{301E3C41-FA0D-4247-811A-1985232F4159} = {784D76F8-EC66-4CB9-A196-17CD9E3A86E0}
+		{AE837AD6-22C2-44F7-8B02-949C03811A69} = {F89F0301-65F9-4D2A-9428-B69987F0ECE1}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2C750CD5-3C45-44E0-B2BA-C3539485D5BA}
+	EndGlobalSection
+EndGlobal
