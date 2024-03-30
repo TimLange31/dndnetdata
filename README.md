@@ -5,5 +5,6 @@ D&amp;D 5e abstractions nuget package.
 - Then inject the Interface into your constructor.
 - for e.g. Spells use: `_{fieldName}.Spells`
 - Enjoy :)
+- Json files are from: https://github.com/5e-bits/5e-database
 
 Any questions: - Delangetimm@gmail.com
