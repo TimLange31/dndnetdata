@@ -5,3 +5,5 @@ D&amp;D 5e abstractions nuget package.
 - Then inject the Interface into your constructor.
 - for e.g. Spells use: `_{fieldName}.Spells`
 - Enjoy :)
+
+Any questions: - Delangetimm@gmail.com
