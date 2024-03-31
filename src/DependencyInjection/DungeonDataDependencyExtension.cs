@@ -9,5 +9,5 @@ public static class DungeonDataDependencyExtension
         => services.AddInternalStaticDndData();
 
     internal static void AddInternalStaticDndData(this IServiceCollection services) 
-        => services.AddSingleton<IDungeonDataService, DungeonDataService>();
+        => services.AddSingleton<IDungeonDataResources, DungeonDataResources>();
 }

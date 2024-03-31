@@ -4,10 +4,27 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>disable</Nullable>
+	  
+	<PackageId>DungeonsDataCore</PackageId>
+	<Version>0.0.1</Version>
+	<VersionSuffix>alpha</VersionSuffix>
+	<Authors>TimLange</Authors>
+	<Description>Static DnD 5e Resources, spells, monsters etc.</Description>
+	<PackageTags>DungeonsAndDragons;Fantasy;Resources</PackageTags>
+	<PackageIconUrl>https://github.com/TimLangePN/dndnetdata/blob/master/dice.png</PackageIconUrl>
+	<RepositoryUrl>https://github.com/TimLangePN/dndnetdata</RepositoryUrl>
+	<RepositoryType>git</RepositoryType>
+	<LicenseExpression>MIT</LicenseExpression>
   </PropertyGroup>
 
-  <ItemGroup>
+	<ItemGroup>
+		<EmbeddedResource Include="DataSources\Spells.json" />
+	</ItemGroup>
+
+	<ItemGroup>
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
 
 </Project>
