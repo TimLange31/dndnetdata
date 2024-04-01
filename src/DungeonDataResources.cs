@@ -12,6 +12,7 @@ internal class DungeonDataResources : EmbeddedDungeonResources, IDungeonDataReso
     private readonly ILogger<DungeonDataResources> _logger;
 
     public ICollection<Spell> Spells { get; set; }
+    public ICollection<Monster> Monsters { get; set; }
 
     public DungeonDataResources(ILogger<DungeonDataResources> logger)
     {
@@ -19,6 +20,7 @@ internal class DungeonDataResources : EmbeddedDungeonResources, IDungeonDataReso
         try
         {
             Spells = base.GetEmbeddedResources<ICollection<Spell>>(Constants.Spells);
+            Monsters = base.GetEmbeddedResources<ICollection<Monster>>(Constants.Monsters);
         }
         catch(Exception ex)
         {

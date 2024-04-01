@@ -6,6 +6,7 @@ namespace DungeonData.Tests;
 public abstract class TestBase
 {
     protected const string Fireball = nameof(Fireball);
+    protected const string Aboleth = nameof(Aboleth);
 
     internal virtual DungeonDataResources SetupDataService()
     {

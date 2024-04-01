@@ -1,30 +1,47 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>disable</Nullable>
-	  
-	<PackageId>DungeonsDataCore</PackageId>
-	<Version>0.0.1</Version>
-	<VersionSuffix>alpha</VersionSuffix>
-	<Authors>TimLange</Authors>
-	<Description>Static DnD 5e Resources, spells, monsters etc.</Description>
-	<PackageTags>DungeonsAndDragons;Fantasy;Resources</PackageTags>
-	<PackageIconUrl>https://github.com/TimLangePN/dndnetdata/blob/master/dice.png</PackageIconUrl>
-	<RepositoryUrl>https://github.com/TimLangePN/dndnetdata</RepositoryUrl>
-	<RepositoryType>git</RepositoryType>
-	<LicenseExpression>MIT</LicenseExpression>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>disable</Nullable>
+
+		<PackageId>DungeonsDataCore</PackageId>
+		<Version>0.0.2</Version>
+		<Authors>Tim Lange</Authors>
+		<Description>Static DnD 5e Resources, spells, monsters etc.</Description>
+		<PackageTags>DungeonsAndDragons;Fantasy;Resources</PackageTags>
+		<PackageIconUrl>https://github.com/TimLangePN/dndnetdata/blob/master/dice.png</PackageIconUrl>
+		<RepositoryUrl>https://github.com/TimLangePN/dndnetdata</RepositoryUrl>
+		<PublishRepositoryUrl>true</PublishRepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<LicenseExpression>MIT</LicenseExpression>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<PackageProjectUrl>https://github.com/TimLangePN/dndnetdata</PackageProjectUrl>
+		<PackageIcon>dice.png</PackageIcon>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<Title>Dungeons Data Core</Title>
+	</PropertyGroup>
 
 	<ItemGroup>
 		<EmbeddedResource Include="DataSources\Spells.json" />
+		<EmbeddedResource Include="DataSources\Monsters.json" />
 	</ItemGroup>
 
 	<ItemGroup>
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.1" />
-    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.1" />
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
-  </ItemGroup>
+	  <None Include="..\dice.png">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	  <None Include="..\README.md">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.1" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.1" />
+	</ItemGroup>
 
 </Project>
